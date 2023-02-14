@@ -48,7 +48,7 @@ body {
     width: 95%;
   }
 }
-.card-box .card img {
+.card-box .card .img-hero {
   width: 100%;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
