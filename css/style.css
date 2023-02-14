@@ -1,0 +1,130 @@
+.card-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.card-box .card-texts .btn {
+  background-color: #382AE1;
+  color: #fff;
+  font-weight: 600;
+  padding: 18px 0;
+  border-radius: 10px;
+  box-shadow: rgba(57, 42, 225, 0.5843137255) 0px 10px 20px -5px, rgba(0, 0, 0, 0.3) 0px 8px 10px -8px;
+  text-decoration: none;
+  transition: 0.5s;
+  margin-bottom: 40px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #E0E8FF;
+}
+
+@media (max-width: 900px) {
+  .card-box {
+    width: 100%;
+  }
+}
+.card-box .card {
+  max-width: 450px;
+  text-align: center;
+  background: #fff;
+  border-radius: 30px;
+}
+@media (max-width: 900px) {
+  .card-box .card {
+    width: 95%;
+  }
+}
+.card-box .card img {
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.card-box .card-texts {
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 900px) {
+  .card-box .card-texts {
+    padding: 50px 15px;
+  }
+}
+.card-box .card-texts h1 {
+  color: #071b5b;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 1.7rem;
+}
+.card-box .card-texts p {
+  font-family: "Noto Sans";
+  padding: 0 20px;
+  font-size: 1.1rem;
+  color: rgba(78, 90, 117, 0.7921568627);
+  margin-bottom: 30px;
+}
+.card-box .card-texts .plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background: rgba(224, 232, 255, 0.3254901961);
+  height: 100px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+@media (max-width: 900px) {
+  .card-box .card-texts .plan {
+    padding: 0px 15px;
+  }
+}
+.card-box .card-texts .plan a {
+  font-size: 0.9rem;
+  color: #382AE1;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.card-box .card-texts .plan a:hover {
+  text-decoration: none;
+  color: #6d61ea;
+}
+.card-box .card-texts .plan-details {
+  display: flex;
+}
+.card-box .card-texts .plan-details p {
+  text-align: left;
+  margin-bottom: 0;
+}
+.card-box .card-texts .plan-details p b {
+  color: #071b5b;
+}
+.card-box .card-texts .btn:hover {
+  color: #fff;
+  background-color: #6d61ea;
+}
+.card-box .card-texts a {
+  font-weight: bold;
+  text-decoration: none;
+  color: rgba(78, 90, 117, 0.7921568627);
+  transition: 0.5s;
+}
+.card-box .card-texts a:hover {
+  color: #071b5b;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,34 @@
+// Mixins
+@mixin reset
+  *
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: 'Montserrat', sans-serif
+
+
+// Placeholder Selectors
+
+%container-format
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 70%
+
+%button-format
+  background-color: $primary-color
+  color: $light-color
+  font-weight: 600
+  padding: 18px 0 
+  border-radius: 10px
+  box-shadow: #392ae195 0px 10px 20px -5px, rgba(0, 0, 0, 0.3) 0px 8px 10px -8px
+  text-decoration: none
+
+  transition: 0.5s
+  margin-bottom: 40px
+
+//Mobile
+
+@mixin responsive
+  @media (max-width: 900px)
+    @content

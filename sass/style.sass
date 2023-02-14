@@ -1,0 +1,108 @@
+@import 'variables'
+@import 'utilities'
+
+@include reset
+
+body
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+  background: $background-color
+
+// Card
+.card-box
+  @extend %container-format
+
+  @include responsive
+     width: 100%
+
+  .card
+    max-width: 450px
+    text-align: center
+    background: $light-color
+    border-radius: 30px
+
+    @include responsive
+     width: 95%
+
+    img
+      width: 100%
+      border-top-left-radius: 30px
+      border-top-right-radius: 30px
+
+
+    &-texts
+      padding: 50px 40px
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+      @include responsive
+        padding: 50px 15px
+
+      h1
+        color:$title-color
+        font-weight: bold
+        margin-bottom: 20px
+        font-size: 1.7rem
+      
+      p
+        font-family: 'Noto Sans'
+        padding: 0 20px
+        font-size: 1.1rem
+        color: $text-color
+        margin-bottom: 30px
+
+      .plan
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0 30px
+        background: $background-light-color
+        height: 100px
+        border-radius: 20px
+        margin-bottom: 50px
+
+        @include responsive
+          padding: 0px 15px
+
+        a
+          font-size: 0.9rem
+          color: $primary-color
+          text-decoration: underline
+          font-weight: 600
+          transition: 0.5s
+
+          &:hover
+            text-decoration: none
+            color: $hover-color
+
+        &-details
+          display: flex
+          p
+            text-align: left
+            margin-bottom: 0
+
+            b
+              color: $title-color
+
+      .btn
+        @extend %button-format
+
+        &:hover
+          color:$light-color
+          background-color: $hover-color
+      
+      a
+        font-weight: bold
+        text-decoration: none
+        color:$text-color
+        transition: 0.5s
+
+        &:hover
+          color: $title-color
+
+
+
+
